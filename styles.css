@@ -10,8 +10,8 @@ html {
 
 body {
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
-  background: #0f0f14;
-  color: #e8e8ee;
+  background: linear-gradient(135deg, #0d0221 0%, #1a0533 30%, #0a1628 70%, #020024 100%);
+  color: #f0e6ff;
   line-height: 1.6;
 }
 
@@ -23,8 +23,8 @@ nav {
   width: 100%;
   z-index: 100;
   backdrop-filter: blur(12px);
-  background: rgba(15, 15, 20, 0.8);
-  border-bottom: 1px solid #26262f;
+  background: rgba(26, 5, 51, 0.7);
+  border-bottom: 1px solid rgba(131, 56, 236, 0.2);
 }
 
 .nav-inner {
@@ -39,7 +39,7 @@ nav {
 .logo {
   font-size: 1.35rem;
   font-weight: 800;
-  background: linear-gradient(135deg, #7c3aed, #2563eb);
+  background: linear-gradient(135deg, #ff006e, #8338ec, #3a86ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -51,7 +51,7 @@ nav {
 }
 
 .nav-links a {
-  color: #a3a3b3;
+  color: #c4b5d4;
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 500;
@@ -59,7 +59,7 @@ nav {
 }
 
 .nav-links a:hover {
-  color: #7c3aed;
+  color: #ff006e;
 }
 
 /* ─── Hero ─── */
@@ -78,8 +78,9 @@ nav {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 60% 50% at 20% 50%, rgba(124, 58, 237, 0.18), transparent),
-    radial-gradient(ellipse 50% 50% at 80% 40%, rgba(37, 99, 235, 0.14), transparent);
+    radial-gradient(ellipse 60% 50% at 15% 50%, rgba(255, 0, 110, 0.15), transparent),
+    radial-gradient(ellipse 50% 50% at 70% 30%, rgba(0, 212, 255, 0.12), transparent),
+    radial-gradient(ellipse 40% 40% at 85% 70%, rgba(131, 56, 236, 0.15), transparent);
   z-index: 0;
 }
 
@@ -95,11 +96,11 @@ nav {
   font-weight: 800;
   line-height: 1.1;
   margin-bottom: 1.25rem;
-  color: #e8e8ee;
+  color: #f0e6ff;
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #7c3aed, #2563eb);
+  background: linear-gradient(135deg, #ff006e, #8338ec, #3a86ff, #00d4ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -107,7 +108,7 @@ nav {
 
 .hero-content p {
   font-size: 1.15rem;
-  color: #a3a3b3;
+  color: #c4b5d4;
   margin-bottom: 2rem;
   max-width: 540px;
   margin-inline: auto;
@@ -116,7 +117,7 @@ nav {
 .btn {
   display: inline-block;
   padding: 0.8rem 2.2rem;
-  background: linear-gradient(135deg, #7c3aed, #2563eb);
+  background: linear-gradient(135deg, #ff006e, #8338ec);
   color: #fff;
   font-weight: 600;
   font-size: 0.95rem;
@@ -129,7 +130,7 @@ nav {
 
 .btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(37, 99, 235, 0.25);
+  box-shadow: 0 8px 30px rgba(255, 0, 110, 0.35);
 }
 
 /* ─── Sections ─── */
@@ -144,11 +145,11 @@ section h2 {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: #e8e8ee;
+  color: #f0e6ff;
 }
 
 section > p {
-  color: #a3a3b3;
+  color: #c4b5d4;
   max-width: 640px;
   margin-bottom: 2.5rem;
 }
@@ -162,17 +163,17 @@ section > p {
 }
 
 .card {
-  background: #1a1a22;
-  border: 1px solid #26262f;
+  background: linear-gradient(145deg, rgba(26, 5, 51, 0.8), rgba(10, 22, 40, 0.8));
+  border: 1px solid rgba(131, 56, 236, 0.2);
   border-radius: 16px;
   padding: 2rem;
   transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s;
 }
 
 .card:hover {
-  border-color: #7c3aed;
+  border-color: #ff006e;
   transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(124, 58, 237, 0.2);
+  box-shadow: 0 12px 40px rgba(255, 0, 110, 0.2);
 }
 
 .card-icon {
@@ -184,11 +185,11 @@ section > p {
   font-size: 1.15rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
-  color: #e8e8ee;
+  color: #f0e6ff;
 }
 
 .card p {
-  color: #a3a3b3;
+  color: #c4b5d4;
   font-size: 0.9rem;
 }
 
@@ -197,7 +198,7 @@ section > p {
 #about p {
   font-size: 1.05rem;
   line-height: 1.75;
-  color: #c2c2cf;
+  color: #d4c4e8;
 }
 
 /* ─── Contact ─── */
@@ -212,9 +213,9 @@ form {
 input, textarea {
   padding: 0.85rem 1rem;
   border-radius: 10px;
-  border: 1px solid #2e2e39;
-  background: #1a1a22;
-  color: #e8e8ee;
+  border: 1px solid rgba(131, 56, 236, 0.3);
+  background: rgba(26, 5, 51, 0.6);
+  color: #f0e6ff;
   font-family: inherit;
   font-size: 0.95rem;
   outline: none;
@@ -222,12 +223,12 @@ input, textarea {
 }
 
 input:focus, textarea:focus {
-  border-color: #7c3aed;
-  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.2);
+  border-color: #ff006e;
+  box-shadow: 0 0 0 3px rgba(255, 0, 110, 0.2);
 }
 
 ::placeholder {
-  color: #6b6b7a;
+  color: rgba(196, 181, 212, 0.4);
 }
 
 form .btn {
@@ -239,9 +240,9 @@ form .btn {
 footer {
   text-align: center;
   padding: 2rem;
-  color: #6b6b7a;
+  color: rgba(196, 181, 212, 0.5);
   font-size: 0.85rem;
-  border-top: 1px solid #26262f;
+  border-top: 1px solid rgba(131, 56, 236, 0.15);
 }
 
 /* ─── Responsive ─── */
